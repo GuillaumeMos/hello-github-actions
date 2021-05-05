@@ -11,4 +11,4 @@ jobs:
          - uses: actions/checkout@v1
           
          - uses: ./action-a
-         - run: bats ./action-a/test.sh
+         - run: bats action-a/test.sh
