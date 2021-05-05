@@ -22,7 +22,8 @@ jobs:
       env:
         DOCKER_USER: ${{secrets.DOCKER_USER}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-        id: uuidgen
+        id: $(cat /proc/sys/kernel/random/uuid)
+
       run:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: build the docker image
