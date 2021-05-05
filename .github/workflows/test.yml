@@ -12,7 +12,7 @@ jobs:
           
          - uses: ./action-a
            with:
-              MY_NAME: "Mona"
+              MY_NAME: "aMona"
          - run: ls
          - run: chmod 755 ./action-a/entrypoint.sh
          - run: bats action-a/test.sh
