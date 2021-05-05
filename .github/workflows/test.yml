@@ -14,3 +14,5 @@ jobs:
          - run: ls
          - run: chmod 755 ./action-a/entrypoint.sh
          - run: bats action-a/test.sh
+            with: 
+              name: aMona
