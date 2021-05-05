@@ -8,5 +8,5 @@ jobs:
       steps:
          - run: sudo apt-get install -y bats
          - uses: actions/checkout@v1
-         - run: action-a/test.sh
+         - run: bats erx3/testing.sh
         
