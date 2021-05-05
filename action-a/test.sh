@@ -1,3 +1,4 @@
+#!/usr/bin/env bats
 
 @test "Should pass" {
 
