@@ -1,3 +1,5 @@
-FROM alpine:3
+FROM debian:9.5-slim
 
-ENTRYPOINT ["echo", "docker github actions"]
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
