@@ -12,4 +12,5 @@ jobs:
           
          - uses: ./action-a
          - run: ls
+         - run: chmod 755 ./action-a/entrypoint.sh
          - run: bats action-a/test.sh
