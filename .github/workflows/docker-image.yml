@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: apt install uuid
+    - run: sudo apt install uuid
     - uses: actions/checkout@v2
     - name: docker login
       env:
