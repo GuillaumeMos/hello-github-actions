@@ -22,7 +22,7 @@ jobs:
       env:
         DOCKER_USER: ${{secrets.DOCKER_USER}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-        id: cat /proc/sys/kernel/random/uuid
+        id: date +%s
         
       run:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
