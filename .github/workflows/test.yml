@@ -8,6 +8,5 @@ jobs:
       steps:
          - run: sudo apt-get install -y bats
          - uses: actions/checkout@v1
-         - uses: ./erx3
-           with:
-            MY_NAME: "Mona"
+         - run: test.sh
+        
